@@ -30,8 +30,11 @@ A full-stack IoT solution for monitoring soil moisture and fertility (NPK levels
 ```
 plant-monitor/
 ├── arduino/
-│   └── plant_communicator.cpp         # Arduino code (sensor readings + POST request)
-│
+|   ├── src/
+│   |   └── PlantCommunicator.cpp
+│   |   └── PlantCommunicator.h
+|   └── main.cpp
+|
 ├── backend/                           # Node.js + Express server
 │   ├── src/
 │   │   ├── routes/
