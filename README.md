@@ -16,14 +16,15 @@ A full-stack IoT solution for monitoring soil moisture and fertility (NPK levels
 
 ## 📊 Tech Stack
 
-| Layer          | Tech                             |
-| -------------- | -------------------------------- |
-| Hardware       | Arduino + Moisture + NPK Sensors |
-| Backend        | Node.js, Express, Supabase       |
-| Frontend (App) | React Native (Expo)              |
-| Cloud Storage  | Supabase Database                |
-
 ---
+
+| Layer            | Language   | Notes                                         |
+| ---------------- | ---------- | --------------------------------------------- |
+| Arduino Firmware | C++        | Reads sensor data, sends HTTP POST to backend |
+| Backend          | JavaScript | Node.js/Express API receives & stores data    |
+| Cloud            | Supabase   | REST API or client libraries for data ops     |
+| Frontend         | TS         | React Native app fetches/display data         |
+
 
 ## 📁 Project Structure
 
