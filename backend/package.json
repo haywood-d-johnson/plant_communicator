@@ -1,6 +1,10 @@
 {
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",

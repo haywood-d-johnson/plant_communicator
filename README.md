@@ -18,13 +18,12 @@ A full-stack IoT solution for monitoring soil moisture and fertility (NPK levels
 
 ---
 
-| Layer            | Language   | Notes                                         |
-| ---------------- | ---------- | --------------------------------------------- |
-| Arduino Firmware | C++        | Reads sensor data, sends HTTP POST to backend |
-| Backend          | JavaScript | Node.js/Express API receives & stores data    |
-| Cloud            | Supabase   | REST API or client libraries for data ops     |
-| Frontend         | TS         | React Native app fetches/display data         |
-
+| Layer         | Language   | Notes                                                                                                  |
+| ------------- | ---------- | ------------------------------------------------------------------------------------------------------ |
+| Arduino       | C++        | Reads sensor data, sends data (initially via serial, later potentially HTTP).                          |
+| Backend       | TypeScript | Node.js/Express API receives & stores data (initially SQLite), integrates**Perenual Plant API**. |
+| Local Storage | SQLite     | File-based database for local data logging and testing.                                                |
+| Frontend      | TypeScript | React Native app fetches/display data                                                                  |
 
 ## 📁 Project Structure
 
